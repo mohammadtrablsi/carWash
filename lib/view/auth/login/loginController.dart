@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:washme/view/test/test.dart';
 
+import '../../../core/classes/statusrequest.dart';
+import '../../../core/functions/handingdatacontroller.dart';
+import '../../../data/datasource/remote/loginData.dart';
+
 class LoginController extends GetxController {
   TextEditingController? phoneNumberController;
   TextEditingController? passwordController;
   GlobalKey<FormState>? formstate;
   bool isPassword = true;
   Map data = {};
-  // MyServices myServices = Get.find();
+  StatusRequest statusRequest = StatusRequest.none;
+  // LoginData loginData = LoginData(Get.find());
   // StatusRequest statusRequest = StatusRequest.none;
   // LoginData loginData = LoginData(Get.find());
   // EventDetailsWithoutAuthrizeData eventDetailsWithoutAuthrizeData =
@@ -37,8 +42,8 @@ class LoginController extends GetxController {
   //     statusRequest = StatusRequest.loading;
   //     update();
   //     var response = await loginData.loginData(
-  //       email!.text,
-  //       password!.text,
+  //       phoneNumberController!.text,
+  //       passwordController!.text,
   //     );
   //     print("=============================== response $response ");
   //     print("=============================== statusRequest $statusRequest ");

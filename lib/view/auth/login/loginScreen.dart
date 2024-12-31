@@ -95,7 +95,7 @@ class Loginscreen extends StatelessWidget {
                 CustomButton(
                   text: 'سجل الان',
                   onTap: () {
-                    Get.toNamed(AppRoute.test);
+                    Get.toNamed(AppRoute.bottomNav);
                   },
                 ),
                 SizedBox(

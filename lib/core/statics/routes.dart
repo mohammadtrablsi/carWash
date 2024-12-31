@@ -6,4 +6,5 @@ class AppRoute {
   static const String verifyCode = "/verifyCodeScreen";
   static const String forgetPassword = "/forgetPasswordScreen";
   static const String profile = "/profileScreen";
+  static const String bottomNav = "/bottomNavScreen";
 }

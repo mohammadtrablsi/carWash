@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
 import 'package:washme/core/statics/routes.dart';
 import 'package:washme/view/auth/login/loginScreen.dart';
+import 'package:washme/view/bottomNav/bottomNavScreen.dart';
 import 'package:washme/view/test/test.dart';
 
 import 'view/auth/forgetPassword/forgetPasswordScreen.dart';
 import 'view/auth/register/registerScreen.dart';
 import 'view/auth/verifyCode/verifyCodeScreen.dart';
+import 'view/home/homeScreen.dart';
 import 'view/onBoarding/onBoardingScreen.dart';
 import 'view/profile/profileScreen.dart';
 
@@ -37,5 +39,9 @@ List<GetPage<dynamic>>? routes = [
   GetPage(
     name: AppRoute.profile,
     page: () => ProfileScreen(),
+  ),
+    GetPage(
+    name: AppRoute.bottomNav,
+    page: () =>  BottomNavScreen(),
   ),
 ];

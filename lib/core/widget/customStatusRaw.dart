@@ -50,7 +50,7 @@ class PointStateOrder extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircleAvatar(
       backgroundColor: isGlow ? Style.mainColor : Colors.grey,
-      radius: 20,
+      radius: 17, //20
       child: isGlow
           ? Icon(
               Icons.check,
