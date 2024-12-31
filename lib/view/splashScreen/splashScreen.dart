@@ -38,15 +38,15 @@ class _SplashScreenState extends State<SplashScreen>
         children: [
           SpinKitRing(
             color: Style.mainColor,
-            size: 120.0,
+            size: 130.0,
             lineWidth: 4,
           ),
           Transform.scale(
             scale: animation.value,
             child: Center(
               child: Container(
-                width: 100,
-                height: 100,
+                width: 110,
+                height: 110,
                 decoration: BoxDecoration(
                   color: Style.mainColor,
                   borderRadius: BorderRadius.circular(100),
@@ -58,9 +58,9 @@ class _SplashScreenState extends State<SplashScreen>
             tag: "logo",
             child: Center(
               child: Image.asset(
-                AssetsData.logo,
-                height: 100,
-                width: 100,
+                AssetsData.carWashForHome2Image,
+                height: 90,
+                width: 90,
               ),
             ),
           )

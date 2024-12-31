@@ -20,21 +20,21 @@ class CustomStatusRow extends StatelessWidget {
                   child: Container(
                 height: 2,
                 width: 4.w,
-                color: Colors.grey,
+                color: Style.greyColor.withOpacity(0.7),
               )),
               PointStateOrder(isGlow: 2 <= numState ? true : false),
               Expanded(
                   child: Container(
                 height: 2,
                 width: 2.w,
-                color: Colors.grey,
+                color: Style.greyColor.withOpacity(0.7),
               )),
               PointStateOrder(isGlow: 3 <= numState ? true : false),
               Expanded(
                   child: Container(
                 height: 2,
                 width: 2.w,
-                color: Colors.grey,
+                color: Style.greyColor.withOpacity(0.7),
               )),
               PointStateOrder(isGlow: 4 <= numState ? true : false),
             ],
@@ -49,7 +49,8 @@ class PointStateOrder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      backgroundColor: isGlow ? Style.mainColor : Colors.grey,
+      backgroundColor:
+          isGlow ? Style.mainColor : Style.greyColor.withOpacity(0.7),
       radius: 17, //20
       child: isGlow
           ? Icon(

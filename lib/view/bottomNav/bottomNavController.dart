@@ -14,14 +14,14 @@ class BottomNavcontroller extends GetxController {
   bool? switchValue = false;
   bool isOwner = false;
   TextEditingController password = TextEditingController();
-  int PageIndex = 2;
+  int PageIndex = 1;
   List<Widget> Listpage = [];
   List<Widget> iconList = const [
     // FaIcon(FontAwesomeIcons., size: 30),
 
-    Icon(Icons.notifications_none, size: 30),
-    Icon(Icons.compare_arrows, size: 30),
-    Icon(Icons.favorite_border_outlined, size: 30),
+    Icon(Icons.watch_later_outlined, size: 30),
+    Icon(Icons.home_outlined, size: 30),
+    Icon(Icons.person_2_outlined, size: 30),
   ];
   bool isDrawerOpen = false;
 

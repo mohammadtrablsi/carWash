@@ -78,14 +78,14 @@ class HomeAppBar extends StatelessWidget {
             fontWeight: FontWeight.w900,
           ),
         ),
-        SizedBox(
-          height: 0.7.h,
-        ),
+        // SizedBox(
+        //   height: 0.3.h,
+        // ),
         Padding(
           padding: EdgeInsetsDirectional.only(start: 3.w),
           child: Text(
             des,
-            style: TextStyle(fontSize: 16.2.sp, color: Style.greyColor),
+            style: TextStyle(fontSize: 17.2.sp, color: Style.greyColor),
           ),
         ),
       ],

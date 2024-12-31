@@ -26,7 +26,7 @@ class CarouselSliderPart extends StatelessWidget {
                   image: photoes[index],
                 ),
             options: CarouselOptions(
-              height: 22.h,
+              height: 21.h,
               // aspectRatio: 16/9,
               viewportFraction: 0.8,
               initialPage: 0,
